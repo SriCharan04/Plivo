@@ -1,0 +1,5 @@
+Epoch 1/10:   0%|                                                                                                     | 0/625 [00:00<?, ?it/s][34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+Traceback (most recent call last):
+  File "/usr/lib64/python3.13/threading.py", line 1542, in _shutdown
+    _thread_shutdown()
+KeyboardInterrupt:

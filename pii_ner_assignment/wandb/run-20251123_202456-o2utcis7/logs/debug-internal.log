@@ -1,0 +1,12 @@
+{"time":"2025-11-23T20:24:56.97785668+05:30","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-23T20:24:57.43886131+05:30","level":"INFO","msg":"stream: created new stream","id":"o2utcis7"}
+{"time":"2025-11-23T20:24:57.439130035+05:30","level":"INFO","msg":"handler: started","stream_id":"o2utcis7"}
+{"time":"2025-11-23T20:24:57.439994292+05:30","level":"INFO","msg":"stream: started","id":"o2utcis7"}
+{"time":"2025-11-23T20:24:57.440072576+05:30","level":"INFO","msg":"sender: started","stream_id":"o2utcis7"}
+{"time":"2025-11-23T20:24:57.440002532+05:30","level":"INFO","msg":"writer: started","stream_id":"o2utcis7"}
+{"time":"2025-11-23T20:25:00.905933502+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-11-23T20:25:01.409740068+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-11-23T20:25:01.420970712+05:30","level":"INFO","msg":"stream: closing","id":"o2utcis7"}
+{"time":"2025-11-23T20:25:01.421203005+05:30","level":"INFO","msg":"handler: closed","stream_id":"o2utcis7"}
+{"time":"2025-11-23T20:25:01.421989379+05:30","level":"INFO","msg":"sender: closed","stream_id":"o2utcis7"}
+{"time":"2025-11-23T20:25:01.422175142+05:30","level":"INFO","msg":"stream: closed","id":"o2utcis7"}

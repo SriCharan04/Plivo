@@ -1,0 +1,36 @@
+{
+  "os": "Linux-6.15.3-100.fc41.x86_64-x86_64-with-glibc2.40",
+  "python": "CPython 3.13.7",
+  "startedAt": "2025-11-23T14:54:24.866167Z",
+  "program": "/home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/src/sweep.py",
+  "codePath": "src/sweep.py",
+  "codePathLocal": "src/sweep.py",
+  "email": "ch22b103@smail.iitm.ac.in",
+  "root": "/home/lassen/shared/GitRepos/Plivo/pii_ner_assignment",
+  "host": "fedora",
+  "executable": "/home/lassen/shared/venv/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "126227120128",
+      "used": "69398577152"
+    }
+  },
+  "memory": {
+    "total": "16461697024"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "memoryTotal": "6439305216",
+      "cudaCores": 2560,
+      "architecture": "Ada",
+      "uuid": "GPU-19e79a52-55d2-7d54-abd0-b33ebac3bec0"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "q1znxyplu0nwr84c9muiyld9epc3dhqe"
+}

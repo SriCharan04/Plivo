@@ -1,0 +1,27 @@
+2025-11-23 19:38:56,695 INFO    Thread-2 (_run_job):14891 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-23 19:38:56,695 INFO    Thread-2 (_run_job):14891 [wandb_setup.py:_flush():80] Configure stats pid to 14891
+2025-11-23 19:38:56,695 INFO    Thread-2 (_run_job):14891 [wandb_setup.py:_flush():80] Loading settings from /home/lassen/.config/wandb/settings
+2025-11-23 19:38:56,695 INFO    Thread-2 (_run_job):14891 [wandb_setup.py:_flush():80] Loading settings from /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/wandb/settings
+2025-11-23 19:38:56,695 INFO    Thread-2 (_run_job):14891 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-11-23 19:38:56,696 INFO    Thread-2 (_run_job):14891 [wandb_init.py:setup_run_log_directory():713] Logging user logs to /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/wandb/run-20251123_193856-n9m99yaz/logs/debug.log
+2025-11-23 19:38:56,696 INFO    Thread-2 (_run_job):14891 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/wandb/run-20251123_193856-n9m99yaz/logs/debug-internal.log
+2025-11-23 19:38:56,697 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():840] calling init triggers
+2025-11-23 19:38:56,697 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():845] wandb.init called with sweep_config: {'batch_size': 8, 'dev': 'data/dev_unbiased.jsonl', 'epochs': 10, 'lr': 0.00038192263289181175, 'max_length': 256, 'model_name': 'distilbert-base-uncased', 'out_dir': 'out/sweep_run', 'train': 'data/train_unbiased.jsonl'}
+config: {'model_name': 'distilbert-base-uncased', 'train': 'data/train.jsonl', 'dev': 'data/dev.jsonl', 'out_dir': 'out', 'batch_size': 8, 'epochs': 3, 'lr': 5e-05, 'max_length': 256, 'device': 'cuda', '_wandb': {}}
+2025-11-23 19:38:56,697 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():888] starting backend
+2025-11-23 19:38:57,012 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():891] sending inform_init request
+2025-11-23 19:38:57,035 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():899] backend started and connected
+2025-11-23 19:38:57,037 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_config_callback():1385] config_cb None None {'batch_size': 8, 'dev': 'data/dev_unbiased.jsonl', 'epochs': 10, 'lr': 0.00038192263289181175, 'max_length': 256, 'model_name': 'distilbert-base-uncased', 'out_dir': 'out/sweep_run', 'train': 'data/train_unbiased.jsonl'}
+2025-11-23 19:38:57,039 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():969] updated telemetry
+2025-11-23 19:38:57,045 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
+2025-11-23 19:38:58,097 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():1040] starting run threads in backend
+2025-11-23 19:38:58,464 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_console_start():2504] atexit reg
+2025-11-23 19:38:58,464 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_redirect():2352] redirect: wrap_raw
+2025-11-23 19:38:58,464 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_redirect():2421] Wrapping output streams.
+2025-11-23 19:38:58,464 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_redirect():2444] Redirects installed.
+2025-11-23 19:38:58,468 INFO    Thread-2 (_run_job):14891 [wandb_init.py:init():1080] run started, returning control to user process
+2025-11-23 19:40:03,451 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_finish():2270] finishing run ch22b103-indian-institute-of-technology-madras/pii-precision-optimization/n9m99yaz
+2025-11-23 19:40:03,452 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_atexit_cleanup():2469] got exitcode: 1
+2025-11-23 19:40:03,453 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_restore():2451] restore
+2025-11-23 19:40:03,453 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_restore():2457] restore done
+2025-11-23 19:40:05,739 INFO    Thread-2 (_run_job):14891 [wandb_run.py:_footer_sync_info():3853] logging synced files

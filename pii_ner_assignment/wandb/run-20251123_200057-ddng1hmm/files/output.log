@@ -1,0 +1,22 @@
+Epoch 1/5: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:09<00:00,  9.01it/s]
+Epoch 1 average loss: 12.8164
+Epoch 2/5: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:09<00:00,  9.04it/s]
+Epoch 2 average loss: 0.0733
+Epoch 3/5: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:09<00:00,  8.97it/s]
+Epoch 3 average loss: 0.0418
+Epoch 4/5: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 625/625 [04:17<00:00,  2.43it/s]
+Epoch 4 average loss: 0.0331
+Epoch 5/5: 100%|████████████████████████████████████████████████████████████████████████████████████████████| 625/625 [02:02<00:00,  5.12it/s]
+Epoch 5 average loss: 0.0272
+Traceback (most recent call last):
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/agents/pyagent.py", line 297, in _run_job
+    self._function()
+    ~~~~~~~~~~~~~~^^
+  File "/home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/src/train.py", line 114, in train
+    model.save_pretrained(args.out_dir)
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/torch/nn/modules/module.py", line 1964, in __getattr__
+    raise AttributeError(
+        f"'{type(self).__name__}' object has no attribute '{name}'"
+    )
+AttributeError: 'DistilBertCrfForTokenClassification' object has no attribute 'save_pretrained'

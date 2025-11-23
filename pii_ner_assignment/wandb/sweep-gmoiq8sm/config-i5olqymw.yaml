@@ -1,0 +1,18 @@
+wandb_version: 1
+
+batch_size:
+  value: 64
+dev:
+  value: data/dev_unbiased.jsonl
+epochs:
+  value: 10
+lr:
+  value: 0.00024788747065414534
+max_length:
+  value: 256
+model_name:
+  value: distilbert-base-uncased
+out_dir:
+  value: out/sweep_run
+train:
+  value: data/train_unbiased.jsonl

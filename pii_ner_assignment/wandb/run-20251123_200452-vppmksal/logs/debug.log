@@ -1,0 +1,49 @@
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_setup.py:_flush():80] Current SDK version is 0.23.0
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_setup.py:_flush():80] Configure stats pid to 21561
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_setup.py:_flush():80] Loading settings from /home/lassen/.config/wandb/settings
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_setup.py:_flush():80] Loading settings from /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/wandb/settings
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_init.py:setup_run_log_directory():713] Logging user logs to /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/wandb/run-20251123_200452-vppmksal/logs/debug.log
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_init.py:setup_run_log_directory():714] Logging internal logs to /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/wandb/run-20251123_200452-vppmksal/logs/debug-internal.log
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_init.py:init():840] calling init triggers
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_init.py:init():845] wandb.init called with sweep_config: {}
+config: {'model_name': 'distilbert-base-uncased', 'train': 'data/train.jsonl', 'dev': 'data/dev.jsonl', 'out_dir': 'out', 'batch_size': 8, 'epochs': 5, 'lr': 5e-05, 'max_length': 256, 'device': 'cuda', '_wandb': {}}
+2025-11-23 20:04:52,809 INFO    MainThread:21561 [wandb_init.py:init():888] starting backend
+2025-11-23 20:04:53,036 INFO    MainThread:21561 [wandb_init.py:init():891] sending inform_init request
+2025-11-23 20:04:53,041 INFO    MainThread:21561 [wandb_init.py:init():899] backend started and connected
+2025-11-23 20:04:53,042 INFO    MainThread:21561 [wandb_init.py:init():969] updated telemetry
+2025-11-23 20:04:53,044 INFO    MainThread:21561 [wandb_init.py:init():993] communicating run to backend with 90.0 second timeout
+2025-11-23 20:04:53,998 INFO    MainThread:21561 [wandb_init.py:init():1040] starting run threads in backend
+2025-11-23 20:04:54,185 INFO    MainThread:21561 [wandb_run.py:_console_start():2504] atexit reg
+2025-11-23 20:04:54,185 INFO    MainThread:21561 [wandb_run.py:_redirect():2352] redirect: wrap_raw
+2025-11-23 20:04:54,186 INFO    MainThread:21561 [wandb_run.py:_redirect():2421] Wrapping output streams.
+2025-11-23 20:04:54,186 INFO    MainThread:21561 [wandb_run.py:_redirect():2444] Redirects installed.
+2025-11-23 20:04:54,189 INFO    MainThread:21561 [wandb_init.py:init():1080] run started, returning control to user process
+2025-11-23 20:09:49,791 INFO    wandb-AsyncioManager-main:21561 [service_client.py:_forward_responses():80] Reached EOF.
+2025-11-23 20:09:49,791 INFO    wandb-AsyncioManager-main:21561 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-11-23 20:09:49,949 ERROR   wandb-AsyncioManager-main:21561 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib64/python3.13/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib64/python3.13/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-11-23 20:09:49,952 ERROR   wandb-AsyncioManager-main:21561 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/sdk/lib/service/service_client.py", line 38, in publish
+    await self._send_server_request(request)
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/sdk/lib/service/service_client.py", line 64, in _send_server_request
+    await self._writer.drain()
+  File "/usr/lib64/python3.13/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/usr/lib64/python3.13/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

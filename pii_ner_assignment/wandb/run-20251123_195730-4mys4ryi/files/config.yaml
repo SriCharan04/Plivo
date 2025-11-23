@@ -1,0 +1,75 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            3b9tdk2ysp8n78gep9z08pru7hpateep:
+                codePath: src/sweep.py
+                codePathLocal: src/sweep.py
+                cpu_count: 8
+                cpu_count_logical: 12
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "126227120128"
+                        used: "69398573056"
+                email: ch22b103@smail.iitm.ac.in
+                executable: /home/lassen/shared/venv/bin/python
+                gpu: NVIDIA GeForce RTX 4050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 2560
+                      memoryTotal: "6439305216"
+                      name: NVIDIA GeForce RTX 4050 Laptop GPU
+                      uuid: GPU-19e79a52-55d2-7d54-abd0-b33ebac3bec0
+                host: fedora
+                memory:
+                    total: "16461697024"
+                os: Linux-6.15.3-100.fc41.x86_64-x86_64-with-glibc2.40
+                program: /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/src/sweep.py
+                python: CPython 3.13.7
+                root: /home/lassen/shared/GitRepos/Plivo/pii_ner_assignment
+                startedAt: "2025-11-23T14:27:30.899953Z"
+                writerId: 3b9tdk2ysp8n78gep9z08pru7hpateep
+        m: []
+        python_version: 3.13.7
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 53
+            "2":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 53
+            "3":
+                - 2
+                - 14
+                - 16
+            "4": 3.13.7
+            "5": 0.23.0
+            "6": 4.57.1
+            "12": 0.23.0
+            "13": linux-x86_64
+batch_size:
+    value: 8
+dev:
+    value: data/dev_unbiased.jsonl
+device:
+    value: cuda
+epochs:
+    value: 10
+lr:
+    value: 0.0001967276792760809
+max_length:
+    value: 128
+model_name:
+    value: distilbert-base-uncased
+out_dir:
+    value: out/sweep_run
+train:
+    value: data/train_unbiased.jsonl

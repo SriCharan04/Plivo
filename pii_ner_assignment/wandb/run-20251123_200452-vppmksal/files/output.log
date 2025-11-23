@@ -1,0 +1,33 @@
+Epoch 1/5:  78%|███████████████████████████████████████████████████████████████████████▋                    | 487/625 [04:53<01:23,  1.66it/s]
+Traceback (most recent call last):
+  File "/home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/src/train.py", line 123, in <module>
+    train()
+    ~~~~~^^
+  File "/home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/src/train.py", line 102, in train
+    loss.backward()
+    ~~~~~~~~~~~~~^^
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+KeyboardInterrupt

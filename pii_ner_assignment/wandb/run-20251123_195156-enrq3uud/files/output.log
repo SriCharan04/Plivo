@@ -1,0 +1,42 @@
+Epoch 1/10: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:10<00:00,  8.89it/s]
+Epoch 1 average loss: 16.5310
+Epoch 2/10: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:09<00:00,  8.98it/s]
+Epoch 2 average loss: 0.1137
+Epoch 3/10: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:09<00:00,  8.97it/s]
+Epoch 3 average loss: 0.0414
+Epoch 4/10: 100%|███████████████████████████████████████████████████████████████████████████████████████████| 625/625 [01:09<00:00,  9.04it/s]
+Epoch 4 average loss: 0.1772
+Epoch 5/10:  13%|████████████▎                                                                               | 84/625 [00:09<00:58,  9.29it/s][34m[1mwandb[0m: Ctrl + C detected. Stopping sweep.
+Epoch 5/10:  13%|████████████▎                                                                               | 84/625 [00:09<01:00,  8.89it/s]
+Traceback (most recent call last):
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/wandb/agents/pyagent.py", line 297, in _run_job
+    self._function()
+    ~~~~~~~~~~~~~~^^
+  File "/home/lassen/shared/GitRepos/Plivo/pii_ner_assignment/src/train.py", line 102, in train
+    loss.backward()
+    ~~~~~~~~~~~~~^^
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lassen/shared/venv/lib64/python3.13/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+Exception

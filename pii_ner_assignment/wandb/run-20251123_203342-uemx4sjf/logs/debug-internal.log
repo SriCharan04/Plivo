@@ -1,0 +1,7 @@
+{"time":"2025-11-23T20:33:42.622426389+05:30","level":"INFO","msg":"stream: starting","core version":"0.23.0"}
+{"time":"2025-11-23T20:33:43.203177097+05:30","level":"INFO","msg":"stream: created new stream","id":"uemx4sjf"}
+{"time":"2025-11-23T20:33:43.203916732+05:30","level":"INFO","msg":"handler: started","stream_id":"uemx4sjf"}
+{"time":"2025-11-23T20:33:43.205497356+05:30","level":"INFO","msg":"stream: started","id":"uemx4sjf"}
+{"time":"2025-11-23T20:33:43.205546913+05:30","level":"INFO","msg":"sender: started","stream_id":"uemx4sjf"}
+{"time":"2025-11-23T20:33:43.205546627+05:30","level":"INFO","msg":"writer: started","stream_id":"uemx4sjf"}
+{"time":"2025-11-23T20:33:43.473669526+05:30","level":"INFO","msg":"stream: closing","id":"uemx4sjf"}
